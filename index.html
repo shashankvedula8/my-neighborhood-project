@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Neighborhood Map Project</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.map">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Macondo" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="title">
+        <h3>My Neighborhood Map - Udacity Project-6</h3>
+    </div>
+	<div class="main" id="main">
+	   <div class="search" id="search">
+            <div style="float: left;">
+            		<input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" placeholder="Enter to search"/>
+            </div>
+            <div style="float: left;clear: left;">
+	            <p>Neighbourhood Map Application is used to help users search for locations nearby cleveland. Search through the list of locations available . Once the location is searched, Click on the marker shows the additional details of the location.
+	        	</p>
+	        </div>
+        </div>
+    
+		<div class="list" id="list">
+			<ul class="searchResults" id="searchResults" data-bind="foreach: sortedList">
+				<li class="place" id="place" data-bind="text: placeName, click: clickEffect"></li>
+			</ul>
+		</div>
+		<div class="map" id="map"></div>
+	</div>
+
+
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src='js/jquery-3.2.0.min.js'></script>
+	<script src='js/main.js'></script>
+    <script src='js/bootstrap.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkrZGlc88VqZRzSWjGdYLNswS_Zd9fhuQ&callback=appEntry&libraries=places" onerror="onTracingError()"></script>
+</body>
+</html>

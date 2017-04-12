@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+@font-face{
+    font-family: myFavFont;
+    src: url('fonts/Maiandra GD.ttf');
+}
+
+@font-face{
+    font-family: myFavFont_Italic;
+    src: url('fonts/MaiandraGDItalic.ttf');
+}
+
+.title{
+    text-align: center; 
+    font-family: 'Macondo', cursive; 
+    font-size: 17px;
+    height: 25px;
+}
+
+p{
+    font-size: 20px;
+    color: white; 
+    font-family: Macondo;
+}
+.search {
+
+    background-color: #2980b9;
+    padding: 8px 15px;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:300px;
+    
+}
+
+.search-box {
+	flex-grow: 1;
+    height: 30px;
+    font-size: 1em;
+    padding: 4px 45px;
+    background-image: url(searchicon.png);
+    background-position: 10px 11px;
+    background-repeat: no-repeat;
+    border: 1px solid;
+    border-color: #ccc;
+    border-radius: 15px;
+}
+
+
+.main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.list {
+	order: 1;
+	flex-grow: 0.15;
+	background-color: #000;
+    max-height: 690px;
+    overflow-y: scroll;
+    font-family: 'Architects Daughter';
+    font-size: 15px;
+    
+}
+
+.map {
+	order: 2;
+	flex-grow: 4;
+	background-color: #fff;
+	text-align: center;
+	height: 690px;
+}
+
+.searchResults {
+	margin: 0;
+	padding: 0;
+    cursor: pointer;
+}
+
+.place {
+    margin: 3px;
+    padding: 10px;
+    list-style: none;
+    background-color: #2980b9;
+    color: white;
+}
+
+@media only screen and (max-device-width : 959px), only screen and (max-width : 959px)  {
+
+    .main {
+        flex-direction: column;
+    }
+
+
+    .search-box, .list {
+        font-size: 1em;
+    }
+
+}
+
+.card_phone
+{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all .2s;
+    background: linear-gradient(to left,#2ECC71,#27ae60);
+    box-shadow: 0 7px 14px rgba(46,204,113,.1), 0 3px 6px rgba(46,204,113,.08);
+    margin-top: 5px;
+}
+
+.card_title
+{
+    font-size: 18px;
+}
+
+.card_img
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.card_url
+{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.gm-style .gm-style-iw {
+    font-weight: 300;
+    font-size: 15px !important;
+    overflow: hidden;
+    color: black;
+}
