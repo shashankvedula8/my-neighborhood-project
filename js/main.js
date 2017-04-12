@@ -102,7 +102,7 @@ var PlacesArray = [{
         placeName: 'Kent State University',
         latitude: 41.149063,
         longitude: -81.341465,
-        imageUrl: 'images/Kent.png'
+        imageUrl: 'images/kent.png'
     },
 
     {
