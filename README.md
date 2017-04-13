@@ -4,7 +4,9 @@ This is the Udacity Project-6 of Full Stack Web Developer Program.
 
 Neighborhood Map Application is used to help users search for locations nearby Cleveland. Users can search from the list of locations provided, and once the search is complete, click on the marker to get more details of the location.
 
-Here is the screen shot of the project, to get an overview. 
+Here is the link for the project, to get an overview. 
+
+https://shashankvedula8.github.io/my-neighborhood-project/
 
 Third part API used in this project is FourSquare API. And link is provided below, where I’ve used to URL format given by the foursquare.
 
